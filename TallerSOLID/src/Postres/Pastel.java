@@ -5,40 +5,17 @@
  */
 package Postres;
 
-import java.util.ArrayList;
-import Adicionales.Aderezo;
-
 /**
  *
  * @author Pedro Mendoza
  */
-public class Pastel{
-    private String sabor;
-    private double precioParcial;
-    private ArrayList<Aderezo> aderezos;
-    
-    public Pastel(String sabor){
-        aderezos= new ArrayList<>();
-        this.sabor=sabor;
-        this.precioParcial = 15.55;
-    }
-    
-    public double calcularPrecioFinal(){
-        double precioFinal;
-        precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
-        return precioFinal;
-    }
+public class Pastel extends Postre{
 
-    public ArrayList<Aderezo> getAderezos() {
-        return aderezos;
-    }
+	public Pastel(String sabor, double precioParcial) {
+		super(sabor, precioParcial);
+	}
+	
+	
 
-    @Override
-    public String toString() {
-        return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
-    }
-    public String showPrecioFinal(){
-        return "Precio Final: $ " + calcularPrecioFinal();
-    }
     
 }
