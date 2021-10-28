@@ -7,19 +7,13 @@ package Adicionales;
 
 /**
  *
- * @author Pedro Mendoza
+ * @author dayana michelle
  */
-public abstract class Aderezo {
-    
-    String nombre;
-
-    public abstract void setNombre(String nombre);
+public class Crema extends Aderezo{
 
     @Override
-    public String toString() {
-        return nombre.toUpperCase();
+    public void setNombre(String nombre) {
+        super.nombre=nombre;
     }
-        
-   // MALVAVISCOS,FRUTILLA,CREMA
     
 }
