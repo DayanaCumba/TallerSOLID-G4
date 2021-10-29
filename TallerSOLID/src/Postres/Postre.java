@@ -7,11 +7,13 @@ import Adicionales.Crema;
 import Leche.LecheEntera;
 
 public abstract class Postre {
+    //Atributos de la clase abstracta Postre
     protected String nombre;
     protected String sabor;
     protected double precioParcial;
     protected  ArrayList<Aderezo> aderezos;
     
+    //Metodo constructor
     public Postre(String nombre,String sabor, double precioParcial){
         aderezos= new ArrayList<>();
         this.sabor=sabor;
