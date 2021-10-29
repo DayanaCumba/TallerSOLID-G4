@@ -13,13 +13,14 @@ import java.util.ArrayList;
  * @author dayana michelle
  */
 public class ManejadorDePrecio {
+	
     public double calcularPrecioFinal(double precioParcial,ArrayList<Aderezo> aderezos){
         double precioFinal;
         precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
         return precioFinal;
     }
     
-     public String showPrecioFinal(double precioParcial,ArrayList<Aderezo> aderezos){
+    public String showPrecioFinal(double precioParcial,ArrayList<Aderezo> aderezos){
         return "Precio Final: $ " + this.calcularPrecioFinal(precioParcial, aderezos);
     }
 }

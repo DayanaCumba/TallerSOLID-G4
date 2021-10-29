@@ -5,16 +5,23 @@
  */
 package Postres;
 
+import Leche.LecheEntera;
+
 /**
  *
  * @author Pedro Mendoza
  */
 public class Helado extends Postre{
-
 	public Helado(String sabor, double precioParcial) {
-		super(sabor, precioParcial);
-		// TODO Auto-generated constructor stub
+		super("Helado", sabor, precioParcial);
 	}
-
+	@Override
+	public void cambiarLeche(LecheEntera leche_cambio) {
+		leche_cambio.usar();
+	}
+        @Override
+        public String toString() {
+            return "Helado{" + "sabor= " + sabor + ", precioParcial= $" + precioParcial + ", aderezos= " + aderezos + '}';
+    }
     
 }

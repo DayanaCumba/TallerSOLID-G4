@@ -10,10 +10,10 @@ package Adicionales;
  * @author Pedro Mendoza
  */
 public abstract class Aderezo {
-    
-    String nombre;
+   
+    public String nombre;
 
-    public abstract void setNombre(String nombre);
+    public abstract void setNombre();
 
     @Override
     public String toString() {

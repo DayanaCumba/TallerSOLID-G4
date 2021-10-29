@@ -10,10 +10,13 @@ package Adicionales;
  * @author dayana michelle
  */
 public class Frutilla extends Aderezo{
+    public Frutilla(){
+        setNombre();
+    }
 
     @Override
-    public void setNombre(String nombre) {
-        super.nombre=nombre;
+    public void setNombre() {
+        super.nombre="FRUTILLA";
     }
     
 }
